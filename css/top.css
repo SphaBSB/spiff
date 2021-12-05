@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300);
+* {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul, ol {list-style: none}
+.slider {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url('https://lh3.googleusercontent.com/-C8FG0EcVx34/WI8aJ6fxl_I/AAAAAAAAALY/9fT49ABrzWkz8Ac_c4oIsOEBvvrfv8sMwCL0BGAYYCw/s1000-fcrop64=1,00000000ffffffff/ocean-water-animated-gif-5.gif');
+    background-position: center;
+    background-size: cover;
+    color: #fff
+}
+.slider .text-fixed {
+    font-size: 9vw;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, .5)
+}
+.slider ul {
+    width: calc(100% * 7);
+    height: 100%;
+}
+.slider ul li {
+    width: calc(100% / 7);
+    height: 100%;
+    float: left;
+    color: #086fb1;
+    text-align: center;
+    position: relative
+}
+.slider ul li .cont {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #fff
+}
+.slider ol, .slider .control .fa {
+    position: absolute
+}
+.slider ol {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider ol li {
+    display: inline-block;
+    cursor: pointer
+}
+.slider ol li:hover .fa:before, .slider ol li.active .fa:before {
+    content: "\f111";
+}
+.slider .control .fa:first-of-type {left: 10px; top: 33%}
+.slider .control .fa:last-of-type {right: 10px; top: 33%}
+.slider .control .fa {
+    cursor: pointer
+}
